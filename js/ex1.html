@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cart Quantity</title>
+		<style>
+			.qtd-button{
+				background-color : blue;
+				color : red;
+			}
+			.add-button1{
+				background-color : green;
+				color : yellow;
+			}
+			.add-button2{
+				background-color : purple;
+				color : orange;
+			}
+			.add-button3{
+				background-color : brown;
+				color : rose;
+			}
+			.reset-button{
+				background-color : red;
+				color : blue;
+			}
+		</style>
+	</head>
+	<body>
+		<p>Cart Quantity</p>
+		<p>
+			<button
+			title = "show quantity"
+			class = "qtd-button"
+			onclick = "console.log(`Cart Quantity: ${c}`)">
+				Show Quantity
+			</button>
+			
+			<button
+			title = "add 1 product to cart"
+			class = "add-button1"
+			onclick = "c++;">
+				Add to Cart
+			</button>
+			
+			<button
+			title = "add 2 products to cart"
+			class = "add-button2"
+			onclick = "c+=2;">
+				+2
+			</button>
+			
+			<button
+			title = "add 3 products to cart"
+			class = "add-button3"
+			onclick = "c+=3;">
+				+3
+			</button>
+			
+			<button
+			title = "reset quantity of products in cart"
+			class = "reset-button"
+			onclick = "c=0;">
+				Reset Cart
+			</button>
+		</p>
+		<script>
+			let c = 0;
+		</script>
+	</body>
+</html>
